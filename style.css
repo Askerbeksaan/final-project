@@ -1,0 +1,167 @@
+*,body{
+    margin: 0px;
+    padding: 0px;
+}
+h6{
+    font-size: 18px;
+}
+h5{
+    font-size: 20px;
+}
+h4{
+    font-size: 32px;
+}
+h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+h2{
+    font-size: 56px;
+}
+h1{
+    font-size: 96px;
+}
+body{
+    margin-inline: auto;
+    padding-inline: 80px;
+    color: white;
+    background-color: #0F172A;
+    width: 1440px;
+    box-sizing: border-box;
+}
+a{
+    padding: 12px;
+}
+a:hover{
+    border-bottom: solid 2px white;
+}
+header{
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-l{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.head-r{
+    display: inline-block;
+    gap: 12px;
+}
+.head-btn-white{
+    font-weight: 500;
+    padding: 12px 28px 12px 28px;
+    color: #0F172A;
+    background-color: white;
+    border-radius: 50px;
+}
+.head-btn-black{
+    margin-left: 12px;
+    font-weight: 500;
+    padding: 12px 28px 12px 28px;
+    color: white;
+    background-color: #0F172A;
+    border: solid 2px white;
+    border-radius: 50px;
+}
+.hero{
+    position: relative;
+    margin-top: 64px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 240px;
+}
+.App-builder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 180px;
+}
+.txt-block-1{
+    width: 568px;
+}
+.txt-block-1 h6{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.txt-block-2{
+    width: 472px;
+}
+.txt-block-2 h6{
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+.macbook{
+    margin-left: auto;
+    margin-right: auto;
+}
+.app-btn{
+    display: flex;
+    gap: 32px;
+}
+.btn-white{
+    color: #0F172A;
+    background-color: white;
+    border-radius: 50px;
+    padding: 16px 32px 16px 32px;
+    font-size: 20px;
+}
+.btn-black{
+    background-color: #0F172A;
+    color: white;
+    border-radius: 50px;
+    padding: 16px 32px 16px 32px;
+    border: none;
+    font-size: 20px;
+}
+.partners{
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+    color: #0F172A;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+}
+.partners div{
+    display: inline-flex;
+    margin-inline: auto;
+    gap: 80px;
+}
+.circle-1{
+    background-color: #581C87;
+    height: 468px;
+    width: 500px;
+    position: absolute;
+    right: -62px;
+    top: -74px;
+    opacity: 0.5;
+    filter: blur(150px);
+    z-index: -1;
+}
+.circle-2{
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: -163px;
+    top: 632px;
+    opacity: 0.2;
+    filter: blur(150px);
+    z-index: -1;
+}
+.circle-3{
+    background-color: #581C87;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: -235px;
+    bottom: -201px;
+    opacity: 0.5;
+    filter: blur(150px);
+    z-index: -1s;
+}
