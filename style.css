@@ -2,8 +2,98 @@
     margin: 0px;
     padding: 0px;
 }
+.purple-line{
+    position: absolute;
+    right: -80px;
+    top: 478px;
+    z-index: -1;
+    width: 784px;
+    height: 1598px;
+    border-top-left-radius: 67px;
+    border-top: solid #9333EA 32px;
+    border-left: solid #9333EA 32px;
+    animation: lines 5s;   
+}
+.orange-line{
+    position: absolute;
+    right: 0px;
+    top: -112px;
+    z-index: -1;
+    border-top-left-radius: 67px;
+    border-top: solid #CA8A04 32px;
+    border-left: solid #CA8A04 32px;
+    width: 704px;
+    height: 1678px;
+    animation: lines 5s;
+}
+.pink-line{
+    position: absolute;
+    right: 0px;
+    top: -112px;
+    z-index: -1;
+    border-top-left-radius: 67px;
+    border-top: solid #C026D3 32px;
+    border-left: solid #C026D3 32px;
+    width: 624px;
+    height: 1758px;
+    animation: lines 5s;
+}
+
+@keyframes lines{
+    0%{
+        height: 0%;
+        width: 8%;
+    }
+    25%{
+        height: 0%;
+        width: 8%;
+    }
+    50%{
+        width: normal;
+        height: 0%;
+    }
+    75%{
+        width: normal;
+    }
+    100%{
+        height: normal;
+        width: normal;
+    }
+}
+.purple-down{
+    position: absolute;
+    z-index: -1;
+    left: -80px;
+    top: 2108px;
+    z-index: -1;
+    width: 624px;
+    height: 210px;
+    border-bottom-right-radius: 67px;
+    border-bottom: solid #9333EA 32px;
+    border-right: solid #9333EA 32px;
+}
+.orange-down{
+    position: absolute;
+    z-index: -1;
+    width: 704px;
+    height: 130px;
+    border-bottom-right-radius: 67px;
+    border-bottom: solid #CA8A04 32px;
+    border-right: solid #CA8A04 32px;
+}
+.pink-down{
+    position: absolute;
+    z-index: -1;
+    width: 784px;
+    height: 50px;
+    border-bottom-right-radius: 67px;
+    border-bottom: solid #C026D3 32px;
+    border-right: solid #C026D3 32px;
+}
 h6{
     font-size: 18px;
+    font-weight: 400;
+    line-height: 160%
 }
 h5{
     font-size: 20px;
@@ -14,12 +104,20 @@ h4{
 h3{
     font-size: 40px;
     font-weight: 700;
+    line-height: 110%;
 }
 h2{
     font-size: 56px;
 }
 h1{
     font-size: 96px;
+}
+button{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
 }
 body{
     margin-inline: auto;
@@ -28,6 +126,7 @@ body{
     background-color: #0F172A;
     width: 1440px;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 a{
     padding: 12px;
@@ -58,7 +157,7 @@ header{
     border-radius: 50px;
 }
 .head-btn-black{
-    margin-left: 12px;
+    margin-right: 16px;
     font-weight: 500;
     padding: 12px 28px 12px 28px;
     color: white;
@@ -68,7 +167,7 @@ header{
 }
 .hero{
     position: relative;
-    margin-top: 64px;
+    padding-top: 64px;
     display: grid;
     grid-template-rows: auto;
     gap: 240px;
@@ -77,7 +176,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 180px;
+}
+.App-builder .iphone{
+    padding-inline: 108px;
+    opacity: 0%;
+    animation-name: phone;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .txt-block-1{
     width: 568px;
@@ -96,6 +202,11 @@ header{
 .macbook{
     margin-left: auto;
     margin-right: auto;
+    opacity: 0%;
+    animation-name: phone;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .app-btn{
     display: flex;
@@ -109,12 +220,15 @@ header{
     font-size: 20px;
 }
 .btn-black{
-    background-color: #0F172A;
-    color: white;
-    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
     padding: 16px 32px 16px 32px;
-    border: none;
     font-size: 20px;
+}
+.btn-black img{
+    position: relative;
 }
 .partners{
     position: relative;
@@ -164,4 +278,12 @@ header{
     opacity: 0.5;
     filter: blur(150px);
     z-index: -1s;
+}
+@keyframes phone{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
